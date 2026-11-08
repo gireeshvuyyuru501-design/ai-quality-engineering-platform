@@ -64,3 +64,35 @@ npm run dev
 
 ## Known limitations
 This is a portfolio-ready **local prototype**, not a cloud-deployed or production-secured service. In-process jobs are lost on restart; jobs recorded as queued/running may need manual reconciliation. Runs use offline fixture data and transparent baselines only. Live LLM assessment, robust RBAC, persistent worker queues, and secured public hosting are future features.
+
+<!-- PORTFOLIO-OVERVIEW-START -->
+
+## Project overview
+
+Dockerized FastAPI and React dashboard integrating ten offline AI quality evaluation modules.
+
+### Technologies and concepts
+
+ - python
+ - fastapi
+ - react
+ - typescript
+ - docker
+ - sqlite
+ - ai evaluation
+ - quality assurance
+
+### Repository information
+
+- **Category:** AI Quality Engineering / Software Testing
+- **Evaluation type:** Offline and/or synthetic fixtures, as documented in this repository
+- **Source code:** [GitHub repository](https://github.com/gireeshvuyyuru501-design/ai-quality-engineering-platform.git)
+- **License:** MIT (subject to repository license file)
+
+### AI Quality Engineering portfolio
+
+This project is part of an 11-project portfolio covering evaluation datasets, structured-output validation, offline scoring, prompt regression, retrieval benchmarking, adversarial testing, agent tool calls, and quality monitoring.
+
+[Explore the integrated AI Quality Engineering Platform](https://github.com/gireeshvuyyuru501-design/ai-quality-engineering-platform)
+
+<!-- PORTFOLIO-OVERVIEW-END -->
