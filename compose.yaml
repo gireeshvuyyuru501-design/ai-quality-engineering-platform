@@ -1,0 +1,21 @@
+# Development-only, localhost-bound Docker Compose stack.
+# All ten sibling evaluation repos stay in their original folders.
+services:
+  backend:
+    build: ./backend
+    environment:
+      AI_QA_PROJECTS_ROOT: /workspace
+      AI_QA_DB_PATH: /workspace/ai-quality-platform/backend/evaluation_history.db
+      AI_QA_LOCAL_TOKEN: ${AI_QA_LOCAL_TOKEN:-}
+    volumes:
+      - ../:/workspace
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "127.0.0.1:5173:80"
+    restart: unless-stopped
